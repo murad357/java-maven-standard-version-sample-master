@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.4](https://github.com/murad357/java-maven-standard-version-sample-master/compare/v0.1.3...v0.1.4) (2020-12-02)
+
+
+### Features
+
+* **feature:** 3nd update hello world ([8f6330b](https://github.com/murad357/java-maven-standard-version-sample-master/commit/8f6330b47bd1967fecbf1f191be099267983ce8e))
+
 ### [0.1.3](https://github.com/murad357/java-maven-standard-version-sample-master/compare/v0.1.2...v0.1.3) (2020-12-02)
 
 
