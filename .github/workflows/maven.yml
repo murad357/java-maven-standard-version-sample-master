@@ -4,7 +4,7 @@
 name: Semantic Versioning with standard-version
 
 on:
-  pull_request:
+  push:
     branches: [ development ]
 
 jobs:
@@ -14,13 +14,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-
-    - id: log
-      run: echo "::set-output name=message::$(git log --no-merges -1 --oneline)"
-    - if: "contains(steps.log.outputs.message, 'feat!:')"
-      run: echo 'feat!:'
-    - if: "contains(steps.log.outputs.message, 'feat:')"
-      run: echo 'feat:'
 
     - name: setup git identity user email
       run: git config --global user.email "uddin.md.jashim@gmail.com"
