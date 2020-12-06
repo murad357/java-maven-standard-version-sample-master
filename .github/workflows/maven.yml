@@ -5,7 +5,7 @@ name: Semantic Versioning with standard-version
 
 on:
   push:
-    branches: [ development ]
+    branches: [ feature/DEX-action ]
 
 jobs:
   build:
