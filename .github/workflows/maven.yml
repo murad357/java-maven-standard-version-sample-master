@@ -14,16 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.pull_request.merged
 
-    strategy:
-      matrix:
-        node-version: [ 8.x, 10.x, 12.x ]
-
     steps:
     - uses: actions/checkout@v2
-    - name: Set up node
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
     - name: Bump up the pom file
       run: npx @dwmkerr/standard-version --packageFiles pom.xml --bumpFiles pom.xml
     - name: Push the tag to trigger a deployment of the new version
