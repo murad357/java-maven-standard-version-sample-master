@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 0.8.0 (2020-12-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* check chore from 0.7.1
+
+* check chore from 0.7.1 ([b659ec7](https://github.com/murad357/java-maven-standard-version-sample-master/commit/b659ec7a211cf6cb0fa5d1e710b5af841a215c51))
+
 ### 0.7.1 (2020-12-06)
 
 ## 0.7.0 (2020-12-06)
