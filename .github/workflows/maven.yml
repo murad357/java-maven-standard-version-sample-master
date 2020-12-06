@@ -30,12 +30,6 @@ jobs:
     - name: step1
       if: contains( env.commitmsg , 'feat:' )
       run: echo 'feat:'
-    - name: step2
-      if: contains( env.commitmsg , 'feat!:' )
-      run: echo 'feat!:'
-    - name: step3
-      if: contains( env.commitmsg , 'doc:' )
-      run: echo 'doc:'
 
     - name: setup git identity user email
       run: git config --global user.email "uddin.md.jashim@gmail.com"
