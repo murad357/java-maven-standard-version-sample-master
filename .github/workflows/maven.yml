@@ -4,7 +4,7 @@
 name: Semantic Versioning with standard-version
 
 on:
-  pull_request:
+  push:
     branches: [ development ]
 
 jobs:
@@ -15,13 +15,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - id: log
-      run: echo "::set-output name=message::$(git log --no-merges -1 --oneline)"
-    - if: "contains(steps.log.outputs.message, 'feat!:')"
-      run: echo 'feat!:'
-    - if: "contains(steps.log.outputs.message, 'feat:')"
-      run: echo 'feat:'
-
     - name: setup git identity user email
       run: git config --global user.email "uddin.md.jashim@gmail.com"
     - name: setup git identity user name
@@ -29,4 +22,4 @@ jobs:
     - name: Bump up the pom file
       run: npx @dwmkerr/standard-version --packageFiles pom.xml --bumpFiles pom.xml
     - name: Push the tag to trigger a deployment of the new version
-      run: git push --follow-tags origin development
+      run: git push --follow-tags
