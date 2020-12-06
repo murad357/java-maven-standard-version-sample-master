@@ -13,7 +13,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: print branch name
-      run: echo github.ref
+      run: echo running on branch ${GITHUB_REF##*/}
+    - name: print commit message
+      run: echo commit message ${{ github.event.head_commit.message }}
     - name: setup git identity user email
       run: git config --global user.email "uddin.md.jashim@gmail.com"
     - name: setup git identity user name
