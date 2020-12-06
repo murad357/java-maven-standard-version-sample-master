@@ -29,4 +29,4 @@ jobs:
     - name: Bump up the pom file
       run: npx @dwmkerr/standard-version --packageFiles pom.xml --bumpFiles pom.xml
     - name: Push the tag to trigger a deployment of the new version
-      run: git push --follow-tags origin HEAD
+      run: git push --follow-tags
