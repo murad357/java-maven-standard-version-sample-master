@@ -5,14 +5,12 @@ name: Semantic Versioning with standard-version
 
 on:
   pull_request:
-    types: [ closed ]
     branches: [ development ]
 
 jobs:
   build:
 
     runs-on: ubuntu-latest
-    if: github.event.pull_request.merged
 
     steps:
     - uses: actions/checkout@v2
