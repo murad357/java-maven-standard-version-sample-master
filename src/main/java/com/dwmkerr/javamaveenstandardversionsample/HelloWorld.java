@@ -6,6 +6,6 @@ package com.dwmkerr.javamaveenstandardversionsample;
  */
 public class HelloWorld {
     public String Hello() {
-        return "Hello, World Test 3! DEX2";
+        return "Hello, World Test 3! DEX-Action";
     }
 }
