@@ -5,10 +5,7 @@ name: Semantic Versioning with standard-version
 
 on:
   push:
-    branches:
-      - '*'
-      - '!development'
-      - '!master'
+    branches: [ feature/* ]
 
 jobs:
   build:
