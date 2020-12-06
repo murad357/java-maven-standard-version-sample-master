@@ -12,6 +12,8 @@ jobs:
     if: github.ref != 'refs/heads/development' || github.ref != 'refs/heads/master'
     steps:
     - uses: actions/checkout@v2
+    - name: print branch name
+      run: echo github.ref
     - name: setup git identity user email
       run: git config --global user.email "uddin.md.jashim@gmail.com"
     - name: setup git identity user name
