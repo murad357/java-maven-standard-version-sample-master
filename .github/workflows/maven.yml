@@ -1,19 +1,21 @@
 # This workflow will build a Java project with Maven
 # For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
 
-name: Semantic Versioning for feature branched with standard-version
+name: Semantic Versioning with standard-version
 
 on:
   push:
     branches:
-      - '*'
-      - '!development'
+      - feature/*
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/feature/*'
     steps:
     - uses: actions/checkout@v2
+
     - name: setup git identity user email
       run: git config --global user.email "uddin.md.jashim@gmail.com"
     - name: setup git identity user name
