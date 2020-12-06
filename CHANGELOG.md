@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.6.10 (2020-12-06)
+
+
+### Features
+
+* update yml file - feat! from 0.6.9 ([86a0a7f](https://github.com/murad357/java-maven-standard-version-sample-master/commit/86a0a7f1cf837028e69758381b521da4cd9bf841))
+
 ### 0.6.9 (2020-12-06)
 
 
