@@ -4,13 +4,15 @@
 name: Semantic Versioning with standard-version
 
 on:
-  merge:
+  pull_request:
+    types: [ closed ]
     branches: [ development ]
 
 jobs:
   build:
 
     runs-on: ubuntu-latest
+    if: github.event.pull_request.merged
 
     strategy:
       matrix:
