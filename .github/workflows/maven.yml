@@ -5,17 +5,14 @@ name: Semantic Versioning with standard-version
 
 on:
   push:
-    branches:
-      - feature/*
+    branches: [ * ]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/feature/*'
+    if: github.ref != 'refs/heads/development' || github.ref != 'refs/heads/master'
     steps:
     - uses: actions/checkout@v2
-
     - name: setup git identity user email
       run: git config --global user.email "uddin.md.jashim@gmail.com"
     - name: setup git identity user name
