@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 0.6.0 (2020-12-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* breaking 6
+
+### Bug Fixes
+
+* breaking 6 ([e97c3a4](https://github.com/murad357/java-maven-standard-version-sample-master/commit/e97c3a47179ce73777aee7b690776eff13414d51))
+
 ### 0.5.1 (2020-12-06)
 
 ## 0.5.0 (2020-12-06)
