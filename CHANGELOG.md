@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.6.8 (2020-12-09)
+
+
+### Bug Fixes
+
+* yml changes ([#37](https://github.com/murad357/java-maven-standard-version-sample-master/issues/37)) ([841e644](https://github.com/murad357/java-maven-standard-version-sample-master/commit/841e644522b8d3bfcc9ebf854d0a0ae7bc4303b1))
+
 ### 0.6.7 (2020-12-06)
 
 ### 0.6.6 (2020-12-06)
